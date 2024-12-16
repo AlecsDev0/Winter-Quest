@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Quest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body class="body">
+    
+    <div class="wrapper">
+        <img src="assets/snowflake.png" id="snowflake">
+
+        <nav>
+            <div class="text">
+                <h1>Winter Quest</h1>
+                <p>Incepe sa colinzi case, primind reward-uri iti poti achizitiona masini <span>Premium</span></p>
+            </div>
+            <div class="userUtils">
+                <span class="status"> <span>Premium</span> </span>
+
+                <span class="candys">
+                    <img src="assets/candy.png">
+                    <p><span>0</span> Candy</p>
+                </span>
+            </div>
+            <button>X</button>
+        </nav>
+
+        <main class="mainPage">
+
+            <div class="premium wrapperInfo">
+                <div class="text">
+                    <span id="container">
+                        <img style="width: 5vw;" src="assets/cap.png">
+                    </span>
+                    <div>
+                        <h1>Premium</h1>
+                        <p>Cu acest statut cresc sansele de a primi <span>acadele</span>, poti primi mai multi <span>bani</span> si un <span>BMW M5 G90 TOURING CHRISTMAS STYLE</span></p>
+                    </div>
+                </div>
+                <button class="getUserPremium">Cumpara</button>
+            </div>
+
+            <div class="dailyGift wrapperInfo">
+                <div class="text">
+                    <span id="container">
+                        <img style="width: 4vw;" src="assets/gift.png">
+                    </span>
+                    <div>
+                        <h1>Daily Gift</h1>
+                        <p>Revendica-ti in fiecare zi cadoul primit de la <span>Mos Craciun</span>, din care poti primi diferite <span>Surprize</span> </p>
+                    </div>
+                </div>
+                <button class="claimDailyGift">Revendica</button>
+            </div>
+
+            <div class="cars wrapperInfo">
+                <div class="text">
+                    <span id="container">
+                        <img src="assets/m5.png">
+                    </span>
+                    <div>
+                        <h1>Limited Cars</h1>
+                        <p>Profita de masinile de la <span>Winter Quest</span>, cu un styling specific acestui anotimp, masinile fiind <span>editie limitata</span>  cu stoc </p>
+                    </div>
+                </div>
+                <button class="getCarList">Afiseaza lista</button>
+            </div>
+
+            <div class="premiumOptions">
+                <img id="ringBell" src="assets/clopot.png">
+                <img id="brad" src="assets/brad.png">
+
+                <h1>Premium Advantages</h1>
+                <div class="text">
+                    <p>La momentul achizitionarii, primesti o masina de editie limitata: <span>BMW M5 G90 TOURING</span> </p>
+                    <p>La fiecare colinda, cresc sansele de la 5% la 15% pentru a primi <span> Item-ul Candy</span></p>
+                    <p>La fiecare colinda, poti primi cu 25% mai multi <span>Bani</span> </p>
+                    <p>Daca doresti sa cumperi o masina si nu mai are Stock, cu premium poti profita de <span>Stoc Nelimitat</span>  </p>
+                </div>
+            </div>
+            
+        </main>
+
+        <main class="carList">
+            <!-- <div class="slot inStock">
+                <span id="imageContainer">
+                    <img src="assets/dacie.png">
+                </span>
+                <div class="text">
+                    <h1>Winter Quest Car</h1>
+                    <p>Stock: <span>50</span></p>
+                </div>
+                <span id="carPrice"> 
+                    <img id="asd" src="assets/candy.png"> 
+                    <img id="candy" src="assets/candy.png"> 
+                    <span>50</span> 
+                </span>
+                <button class="purchaseCar active">Cumpara</button>
+            </div>
+
+
+            <div class="slot inStock">
+                <span id="imageContainer">
+                    <img src="assets/jeeptrackhawk.png">
+                </span>
+                <div class="text">
+                    <h1>Jeep Trackhawk 2022</h1>
+                    <p>Stock: <span>3</span></p>
+                </div>
+                <span id="carPrice"> 
+                    <img id="asd" src="assets/candy.png"> 
+                    <img id="candy" src="assets/candy.png"> 
+                    <span>500</span> 
+                </span>
+                <button class="purchaseCar active">Cumpara</button>
+            </div>
+            
+            <div class="slot outOfStock">
+                <span id="imageContainer">
+                    <img src="assets/m5touring.png">
+                </span>
+                <div class="text">
+                    <h1>BMW M5 G90 TOURING</h1>
+                    <p>Stock: <span>0</span></p>
+                </div>
+                <span id="carPrice"> 
+                    <img id="asd" src="assets/candy.png"> 
+                    <img id="candy" src="assets/candy.png"> 
+                    <span>500</span> 
+                </span>
+                <button class="purchaseCar block">Cumpara</button>
+            </div> -->
+
+            <div class="info">
+                <img id="gift" src="assets/gift.png">
+
+                <img id="snowman" src="assets/snowman.png">
+
+                <div class="text">
+                    <h1>Deschide un cadou</h1>
+                    <p>In acest cadou se pot ascunde diferite <span>surprize</span> ce iti pot aduce castiguri in timpul <span>Winter Quest-ului</span>, cu doar <span>20 candy</span> </p>
+                </div>
+                <button class="openPaidGift">Deschide</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="text">
+                <img src="assets/santa.png">
+                <div>
+                    <h1>Du traditia mai departe!</h1>
+                    <p>Incepe sa colinzi la casele din aleea apropiata, avand sansa de a primi diferite <span>premii</span></p>
+                </div>
+            </div>
+            <button class="startQuest">Incepe</button>
+        </footer>
+
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
