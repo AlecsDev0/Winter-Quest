@@ -206,7 +206,7 @@ end)
 RegisterNetEvent('wquest:updateCandy',function(number)
     local src = source
     local uid = vRP.getUserId({src})
-    exports.oxmysql:executeSync('UPDATE winter_users SET candy = candy + ? WHERE user_id = ?', { tonumber(3), uid })
+    exports.oxmysql:executeSync('UPDATE winter_users SET candy = candy + ? WHERE user_id = ?', { tonumber(number), uid })
 end)
 
 RegisterNetEvent('wquest:payUser', function()
@@ -234,7 +234,7 @@ RegisterNetEvent('wquest:payUser', function()
             TriggerClientEvent('wq:notify', src, 'Ai primit <span>' .. math.floor(money) .. '$</span> pentru colinda')
             if math.random(1, 100) <= sansaCandy then
                 candyLuate = 1
-                TriggerEvent('wquest:updateCandy',src,1)
+                TriggerEvent('wquest:updateCandy',src,candyLuate)
                 -- give item candy
             end
 
@@ -255,7 +255,7 @@ RegisterNetEvent('wquest:payUser', function()
             if math.random(1, 100) <= sansaCandy then
                 candyLuate = 3
                 -- give item candy
-                TriggerEvent('wquest:updateCandy',src,3)
+                TriggerEvent('wquest:updateCandy',src,candyLuate)
             end
 
             embed = {
